@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-25 13:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: models.py:18
+msgid "General undefined response."
+msgstr "Generelle undefinierte Antwort."
+
+#: models.py:19
+msgid "Still waiting on something."
+msgstr "Warten."
+
+#: models.py:20
+msgid "General problem with data."
+msgstr "Generelles Problem mit Daten."
+
+#: models.py:21
+msgid "Problem with creditcard data."
+msgstr "Problem mit den Kreditkartendaten."
+
+#: models.py:22
+msgid "Problem with cvv."
+msgstr "Probleme mit der Prüfnummer"
+
+#: models.py:23
+msgid "Card expired or not yet valid."
+msgstr "Kreditkarte ist abgelaufen oder noch nicht gültig."
+
+#: models.py:24
+msgid "Limit exceeded."
+msgstr "Limit überschritten."
+
+#: models.py:25
+msgid "Problem with bank account data."
+msgstr "Problem mit Bankkontodaten."
+
+#: models.py:26
+msgid "Problem with 3d secure data."
+msgstr "Problem mit 3D-Sicherheitsdaten."
+
+#: models.py:27
+msgid "General problem with backend."
+msgstr "Generelles Problem mit dem Server."
+
+#: models.py:28
+msgid "Technical error with credit card."
+msgstr "Technischer Fehler mit der Kreditkarte."
+
+#: models.py:29
+msgid "Error limit exceeded."
+msgstr "Fehlerlimit überschritten."
+
+#: models.py:30
+msgid "Technical error with bank account."
+msgstr "Technischer Fehlerlimit mit dem Bankkonto."
+
+#: models.py:31
+msgid "Technical error with 3D secure."
+msgstr "Technischer Fehler mit 3D Sicherheit"
+
+#: models.py:32
+msgid "Decline because of risk issues."
+msgstr "Abgelehnt auf Grund von von Risikobelangen."
+
+#: models.py:53 models.py:84
+msgid ""
+"An error with the credit card occured, please try again later or use a other "
+"payment method."
+msgstr ""
+"Ein Fehler mit der Kreditkarte ist aufgetreten, bitte versuchen Sie es "
+"später noch einmal oder nutzen Sie eine andere Zahlmethode."
+
+#: models.py:60
+msgid "Credit cart payment for customer"
+msgstr "Kreditkartenzahlung für Kunden"
