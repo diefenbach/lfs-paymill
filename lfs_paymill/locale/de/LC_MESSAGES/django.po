@@ -67,7 +67,7 @@ msgstr "Fehlerlimit überschritten."
 
 #: models.py:30
 msgid "Technical error with bank account."
-msgstr "Technischer Fehlerlimit mit dem Bankkonto."
+msgstr "Technischer Fehler mit dem Bankkonto."
 
 #: models.py:31
 msgid "Technical error with 3D secure."
