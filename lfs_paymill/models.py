@@ -107,7 +107,7 @@ class PaymillPaymentMethodProcessor(PaymentMethodProcessor):
         payment_costs = lfs.payment.utils.get_payment_costs(self.request, payment_method)
 
         # Calculate the totals
-        price = self.cart.get_price_gross(self.request) + shipping_costs["price"] + payment_costs["price"]
+        price = self.cart.get_price_gross(self.request) + shipping_costs["price_gross"] + payment_costs["price"]
 
         # Discounts
         discounts = lfs.discounts.utils.get_valid_discounts(self.request)

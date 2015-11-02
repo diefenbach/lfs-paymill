@@ -17,24 +17,24 @@ $(document).ready(function () {
             // Deactivate order button
             $('.button_order').attr("disabled", "disabled");
 
-            if (false == paymill.validateCardNumber($('#id_credit_card_number').val())) {
+            if (false == paymill.validateCardNumber($('#id_credit_card-number').val())) {
                 $(".payment-errors").text("Ungueltige Kartennummer");
                 $(".button_order").removeAttr("disabled");
                 return false;
             }
 
-            if (false == paymill.validateExpiry($('#id_credit_card_expiration_date_month').val(), $('#id_credit_card_expiration_date_year').val())) {
+            if (false == paymill.validateExpiry($('#id_credit_card-expiration_date_month').val(), $('#id_credit_card-expiration_date_year').val())) {
                 $(".payment-errors").text("Ungueltiges Gueltigkeitsdatum");
                 $(".button_order").removeAttr("disabled");
                 return false;
             }
 
             paymill.createToken({
-                number:$('#id_credit_card_number').val(),
-                exp_month:$('#id_credit_card_expiration_date_month').val(),
-                exp_year:$('#id_credit_card_expiration_date_year').val(),
-                cvc:$('#id_credit_card_verification').val(),
-                cardholdername:$('#id_credit_card_owner').val(),
+                number:$('#id_credit_card-number').val(),
+                exp_month:$('#id_credit_card-expiration_date_month').val(),
+                exp_year:$('#id_credit_card-expiration_date_year').val(),
+                cvc:$('#id_credit_card-verification').val(),
+                cardholdername:$('#id_credit_card-owner').val(),
                 amount:$('.amount').val(),
                 currency:$('.currency').val()
             }, PaymillResponseHandler);
