@@ -34,9 +34,10 @@ $(document).ready(function () {
                 exp_month: $('#id_credit_card-expiration_date_month').val(),
                 exp_year: $('#id_credit_card-expiration_date_year').val(),
                 cvc: $('#id_credit_card-verification').val(),
-                cardholdername: $('#id_credit_card-owner').val(),
-                amount: $('.amount').val().replace(",", "."),
-                currency: $('.currency').val()
+                cardholder: $('#id_credit_card-owner').val(),
+                amount_int: $('.amount').val().replace(',', ''),
+                currency: $('.currency').val(),
+                email: PAYMILL_EMAIL,
             }, PaymillResponseHandler);
 
             return false;
