@@ -30,14 +30,13 @@ $(document).ready(function () {
             }
 
             paymill.createToken({
+                amount_int: parseInt($('.amount').val().replace(',', '')),
+                currency: $('.currency').val(),
                 number: $('#id_credit_card-number').val(),
                 exp_month: $('#id_credit_card-expiration_date_month').val(),
                 exp_year: $('#id_credit_card-expiration_date_year').val(),
                 cvc: $('#id_credit_card-verification').val(),
                 cardholder: $('#id_credit_card-owner').val(),
-                amount_int: $('.amount').val().replace(',', ''),
-                currency: $('.currency').val(),
-                email: PAYMILL_EMAIL,
             }, PaymillResponseHandler);
 
             return false;
