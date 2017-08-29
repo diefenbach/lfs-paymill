@@ -70,7 +70,7 @@ class PaymillPaymentMethodProcessor(PaymentMethodProcessor):
         }
 
         result = requests.post(
-            "https://api.paymill.com/v2/transactions",
+            "https://api.paymill.com/v2.1/transactions",
             auth = (getattr(settings, "PAYMILL_PRIVATE_KEY"), ""),
             params = payload,
         )
