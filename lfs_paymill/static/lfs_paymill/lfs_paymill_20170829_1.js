@@ -30,7 +30,7 @@ $(document).ready(function () {
             }
 
             paymill.createToken({
-                amount_int: (parseFloat($('.amount').val().replace(',', '.')) * 100).toFixed(0),
+                amount_int: parseInt((parseFloat($('.amount').val().replace(',', '.')) * 100).toFixed(0)),
                 currency: $('.currency').val(),
                 number: $('#id_credit_card-number').val(),
                 exp_month: $('#id_credit_card-expiration_date_month').val(),
