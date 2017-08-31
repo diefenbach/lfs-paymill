@@ -18,7 +18,7 @@ class LFSPaymillJSNode(template.Node):
                 var PAYMILL_EMAIL = '%s';
             </script>
             <script type="text/javascript" src="https://bridge.paymill.com/"></script>
-            <script type="text/javascript" src="%slfs_paymill/lfs_paymill_20170829_2.js"></script>
+            <script type="text/javascript" src="%slfs_paymill/lfs_paymill_20170831.js"></script>
         """ % (paymill_public_key, email, static_url)
 
 

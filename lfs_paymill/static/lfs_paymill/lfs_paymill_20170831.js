@@ -37,7 +37,7 @@ $(document).ready(function () {
                 exp_year: $('#id_credit_card-expiration_date_year').val(),
                 cvc: $('#id_credit_card-verification').val(),
                 cardholder: $('#id_credit_card-owner').val(),
-                email: PAYMILL_EMAIL,
+                email: $('#id_invoice-email').val(),
             }, PaymillResponseHandler);
 
             return false;
