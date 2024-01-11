@@ -19,7 +19,11 @@ class LFSPaymillJSNode(template.Node):
             </script>
             <script type="text/javascript" src="https://bridge.paymill.com/"></script>
             <script type="text/javascript" src="%slfs_paymill/lfs_paymill_20170831.js"></script>
-        """ % (paymill_public_key, email, static_url)
+        """ % (
+            paymill_public_key,
+            email,
+            static_url,
+        )
 
 
 @register.tag
